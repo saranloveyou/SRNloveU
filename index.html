@@ -3,156 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>เว็บของฉัน</title>
-  <link href="/src/style.css" rel="stylesheet">
+  <title>หน่วยฮอทไลน์ทั่วประเทศ</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="my-4 p-4 bg-white border-2 border-gray-500 shadow-xl rounded-md font-mono">
-  
-  <h1 class="m-4 text-center text-xl">หน่วยฮอทไลน์ทั่วประเทศ</h1>
+<body class="bg-gray-50 p-4 font-sans text-sm">
 
-  <div class="flex justify-around gap-4">
-    <div class="text-center bg-white border border-gray-200 shadow-sm rounded-md">อัตราทั่วประเทศ
-    <table class="border-separate border-spacing-2 font-stretch-condensed">
-<thead>
-    <tr>
-      <th class="">กฝช.</th>
-      <th class="">กรอบอัตรา 12 เขต</th>
-      <th class="">ปัจจุบัน</th>
-      <th class="">ผลต่าง</th>
-    </tr>
-  </thead>
-      <tbody>
-    <tr>
-      <td class="">25</td>
-      <td class="">1045</td>
-      <td class="">1031</td>
-      <td class="">ขาด 14</td>
-  </tbody>
-    
-  </table>
-    </div>
-  <div class="text-center bg-white border border-gray-200 shadow-sm rounded-md">อัตรา Rubber Gloves
-  <table class="border-separate border-spacing-2">
-<thead>
-    <tr>
-      <th class="">ภาค</th>
-      <th class="">กรอบอัตรา 12 เขต</th>
-      <th class="">ปัจจุบัน</th>
-      <th class="">ผลต่าง</th>
-    </tr>
-  </thead>
-    <tbody>
-    <tr>
-      <td class="">ภาค น.</td>
-      <td class="">96</td>
-      <td class="">95</td>
-      <td class="">ขาด 1</td>
-    </tr>
-    <tr>
-      <td class="">ภาค ฉ.</td>
-      <td class="">96</td>
-      <td class="">96</td>
-      <td class="">ตรงอัตรา</td>
-    </tr>
-    <tr>
-      <td class="">ภาค ก.</td>
-      <td class="">120</td>
-      <td class="">120</td>
-      <td class="">ขาด 2</td>
-    </tr>
-        <tr>
-      <td class="">รวม 12 เขต</td>
-      <td class="">427</td>
-      <td class="">424</td>
-      <td class="">ขาด 3</td>
-    </tr>
-  </tbody>
-    
-  </table>
-  </div>
-  <div class="text-center bg-white border border-gray-200 shadow-sm rounded-md">อัตรา Hot Srick
-  <table class="border-separate border-spacing-2">
-<thead>
-    <tr>
-      <th class="">ภาค</th>
-      <th class="">กรอบอัตรา 12 เขต</th>
-      <th class="">ปัจจุบัน</th>
-      <th class="">ผลต่าง</th>
-    </tr>
-  </thead>
-    <tbody>
-    <tr>
-      <td class="">ภาค น.</td>
-      <td class="">96</td>
-      <td class="">95</td>
-      <td class="">ขาด 1</td>
-    </tr>
-    <tr>
-      <td class="">ภาค ฉ.</td>
-      <td class="">96</td>
-      <td class="">96</td>
-      <td class="">ตรงอัตรา</td>
-    </tr>
-    <tr>
-      <td class="">ภาค ก.</td>
-      <td class="">120</td>
-      <td class="">120</td>
-      <td class="">ขาด 2</td>
-    </tr>
-        <tr>
-      <td class="">รวม 12 เขต</td>
-      <td class="">427</td>
-      <td class="">424</td>
-      <td class="">ขาด 3</td>
-    </tr>
-  </tbody>
-    
-  </table>
-  </div>
-    <div class="text-center bg-white border border-gray-200 shadow-sm rounded-md">อัตรา กบษ.
-    <table class="border-separate border-spacing-2">
-<thead>
-    <tr>
-      <th class="">ภาค</th>
-      <th class="">กรอบอัตรา 12 เขต</th>
-      <th class="">ปัจจุบัน</th>
-      <th class="">ผลต่าง</th>
-    </tr>
-  </thead>
-      <tbody>
-    <tr>
-      <td class="">ภาค น.</td>
-      <td class="">96</td>
-      <td class="">95</td>
-      <td class="">ขาด 1</td>
-    </tr>
-    <tr>
-      <td class="">ภาค ฉ.</td>
-      <td class="">96</td>
-      <td class="">96</td>
-      <td class="">ตรงอัตรา</td>
-    </tr>
-    <tr>
-      <td class="">ภาค ก.</td>
-      <td class="">120</td>
-      <td class="">120</td>
-      <td class="">ขาด 2</td>
-    </tr>
-        <tr>
-      <td class="">รวม 12 เขต</td>
-      <td class="">427</td>
-      <td class="">424</td>
-      <td class="">ขาด 3</td>
-    </tr>
-  </tbody>
-    
-  </table>
-    </div>
+  <div class="bg-white border border-gray-300 rounded-xl shadow-sm p-4">
+    <h1 class="text-center text-base font-semibold mb-4 text-gray-800">หน่วยฮอทไลน์ทั่วประเทศ</h1>
 
+    <div class="overflow-x-auto">
+      <div class="flex gap-3 min-w-max">
+
+        <!-- ตาราง 1: อัตราทั่วประเทศ -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <div class="bg-gray-100 text-center text-xs font-semibold text-gray-700 py-1.5 px-2">อัตราทั่วประเทศ</div>
+          <table class="text-xs text-center">
+            <thead class="bg-gray-50 text-gray-600">
+              <tr>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">กฝช.</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">กรอบอัตรา<br>12 เขต</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ปัจจุบัน</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ผลต่าง</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-2 py-2">25</td>
+                <td class="px-2 py-2">1,045</td>
+                <td class="px-2 py-2">1,031</td>
+                <td class="px-2 py-2 text-red-500 font-medium">ขาด 14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ตาราง 2: Rubber Gloves -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <div class="bg-gray-100 text-center text-xs font-semibold text-gray-700 py-1.5 px-2">อัตรา Rubber Gloves</div>
+          <table class="text-xs text-center">
+            <thead class="bg-gray-50 text-gray-600">
+              <tr>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ภาค</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">กรอบอัตรา<br>12 เขต</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ปัจจุบัน</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ผลต่าง</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค น.</td><td class="px-2 py-2">96</td><td class="px-2 py-2">95</td>
+                <td class="px-2 py-2 text-red-500 font-medium">ขาด 1</td>
+              </tr>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค ฉ.</td><td class="px-2 py-2">96</td><td class="px-2 py-2">96</td>
+                <td class="px-2 py-2 text-green-600 font-medium">ตรงอัตรา</td>
+              </tr>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค ก.</td><td class="px-2 py-2">120</td><td class="px-2 py-2">120</td>
+                <td class="px-2 py-2 text-red-500 font-medium">ขาด 2</td>
+              </tr>
+              <tr class="bg-gray-50 font-semibold">
+                <td class="px-2 py-2">รวม 12 เขต</td><td class="px-2 py-2">427</td><td class="px-2 py-2">424</td>
+                <td class="px-2 py-2 text-red-500">ขาด 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ตาราง 3: Hot Srick -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <div class="bg-gray-100 text-center text-xs font-semibold text-gray-700 py-1.5 px-2">อัตรา Hot Srick</div>
+          <table class="text-xs text-center">
+            <thead class="bg-gray-50 text-gray-600">
+              <tr>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ภาค</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">กรอบอัตรา<br>12 เขต</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ปัจจุบัน</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ผลต่าง</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค น.</td><td class="px-2 py-2">96</td><td class="px-2 py-2">95</td>
+                <td class="px-2 py-2 text-red-500 font-medium">ขาด 1</td>
+              </tr>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค ฉ.</td><td class="px-2 py-2">96</td><td class="px-2 py-2">96</td>
+                <td class="px-2 py-2 text-green-600 font-medium">ตรงอัตรา</td>
+              </tr>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค ก.</td><td class="px-2 py-2">120</td><td class="px-2 py-2">120</td>
+                <td class="px-2 py-2 text-red-500 font-medium">ขาด 2</td>
+              </tr>
+              <tr class="bg-gray-50 font-semibold">
+                <td class="px-2 py-2">รวม 12 เขต</td><td class="px-2 py-2">427</td><td class="px-2 py-2">424</td>
+                <td class="px-2 py-2 text-red-500">ขาด 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ตาราง 4: กบษ. -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <div class="bg-gray-100 text-center text-xs font-semibold text-gray-700 py-1.5 px-2">อัตรา กบษ.</div>
+          <table class="text-xs text-center">
+            <thead class="bg-gray-50 text-gray-600">
+              <tr>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ภาค</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">กรอบอัตรา<br>12 เขต</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ปัจจุบัน</th>
+                <th class="px-2 py-1.5 font-medium border-b border-gray-200">ผลต่าง</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค น.</td><td class="px-2 py-2">96</td><td class="px-2 py-2">95</td>
+                <td class="px-2 py-2 text-red-500 font-medium">ขาด 1</td>
+              </tr>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค ฉ.</td><td class="px-2 py-2">96</td><td class="px-2 py-2">96</td>
+                <td class="px-2 py-2 text-green-600 font-medium">ตรงอัตรา</td>
+              </tr>
+              <tr class="bg-white border-b border-gray-100">
+                <td class="px-2 py-2">ภาค ก.</td><td class="px-2 py-2">120</td><td class="px-2 py-2">120</td>
+                <td class="px-2 py-2 text-red-500 font-medium">ขาด 2</td>
+              </tr>
+              <tr class="bg-gray-50 font-semibold">
+                <td class="px-2 py-2">รวม 12 เขต</td><td class="px-2 py-2">427</td><td class="px-2 py-2">424</td>
+                <td class="px-2 py-2 text-red-500">ขาด 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
   </div>
-  
-  
-  <script src="script.js"></script>
+
 </body>
 </html>
