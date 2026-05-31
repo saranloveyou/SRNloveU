@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body style="font-family: 'Noto Sans Thai', sans-serif;" class="bg-gray-50 p-4 text-sm">
 
@@ -23,7 +24,8 @@
         <!-- ตาราง 1: อัตราทั่วประเทศ -->
         <div class="border border-gray-200 shadow-md rounded-lg overflow-hidden basis-full">
           <div class="bg-fuchsia-600 text-center text-sm font-bold text-white py-2">อัตราทั่วประเทศ</div>
-          <table class="w-full text-xs text-center">
+          <canvas id="myChart"></canvas>
+          <!-- <table class="w-full text-xs text-center">
             <thead class="bg-gray-50 text-gray-600">
               <tr>
                 <th class="py-2 font-medium border-b border-gray-200">กฝช.</th>
@@ -40,7 +42,7 @@
                 <td class="py-2 text-red-500 font-medium">ขาด 14</td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
         </div>
 
         <!-- ตาราง 2: Rubber Gloves -->
@@ -453,8 +455,34 @@
       </table>
 </div>
     </div>
-    
   </div>
 
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'doughnut', // ← เปลี่ยนเป็น 'pie' ถ้าอยากได้แบบโดนัท
+      data: {
+        labels: ['กฝช.', 'กรอบอัตรา<br>12 เขต', 'ปัจจุบัน', 'ผลต่าง'],
+        datasets: [{
+          data: [25, 1045, 1031, 'ขาด 14'],
+          backgroundColor: [
+            '#3B82F6', // ฟ้า
+            '#10B981', // เขียว
+            '#F59E0B', // เหลือง
+            '#FFFFFF', // เหลือง
+          ],
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            position: 'bottom', // legend อยู่ด้านล่าง
+          }
+        }
+      }
+    });
+  </script>
+  
 </body>
 </html>
